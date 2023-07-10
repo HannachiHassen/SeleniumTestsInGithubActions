@@ -1,0 +1,26 @@
+name : context demo
+
+on: 
+
+ workflow_dispatch:
+  inputs:
+   text:
+    description: 'enter the word you want to print'
+    default: 'Hello'
+    required: true
+    type: string
+env:
+ firstName: 'Hassen'
+ website: 'selenium'
+
+jobs:
+  contexts-demo:
+   run-on: ${{matrix.os}}
+   strategy:
+   matrix:
+    os: [ubuntu-latest]
+  stepts:
+
+   - run:
+   - run:
+
