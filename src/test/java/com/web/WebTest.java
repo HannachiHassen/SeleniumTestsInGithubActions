@@ -1,4 +1,4 @@
-package com.webtest;
+package com.web;
 
 import java.net.URL;
 
