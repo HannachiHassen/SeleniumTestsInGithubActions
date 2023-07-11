@@ -8,22 +8,25 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import lombok.SneakyThrows;
+
 public final class WebTest {
 
 	public WebTest() {	}
 	
+	@SneakyThrows
 	@Test (groups = "web")
 	public void testGoogleSearchSelenoid() {
 		System.out.println("username"+ System.getProperty("username"));
 		System.out.println("password"+ System.getProperty("password"));
 		
 		DesiredCapabilities capabilities= new DesiredCapabilities();
-		capabilities.setCapability("", "");
-		capabilities.setCapability("", "");
-		capabilities.setCapability("", "");
+		capabilities.setCapability("browserName", "chrome");
+		capabilities.setCapability("enableVNC", true);
+		capabilities.setCapability("enableVideo", false);
 		
 		WebDriver driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
-		driver.get("");
+		driver.get("https://google.com");
 		Assert.assertEquals(driver.getTitle(), "Google");
 		Thread.sleep(10000);
 		driver.quit();
