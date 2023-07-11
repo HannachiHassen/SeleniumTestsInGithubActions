@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import lombok.SneakyThrows;
@@ -30,5 +31,11 @@ public final class WebTest {
 		Assert.assertEquals(driver.getTitle(), "Google");
 		Thread.sleep(10000);
 		driver.quit();
+	}
+	
+	@DataProvider(parallel = true)
+	public Object [][] getData(){
+		return new Object[][]
+				{{"chrome","94.0.4606.61"},{"chrome","79.0.3945.117"},{"firefox","92.0.1"}};		
 	}
 }
