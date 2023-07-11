@@ -43,3 +43,14 @@ You can write your own actions, or you can find actions to use in your workflows
 A runner is a server that runs your workflows when they're triggered. Each runner can run a single job at a time. GitHub provides Ubuntu Linux, Microsoft Windows, and macOS runners to run your workflows; each workflow run executes in a fresh, newly-provisioned virtual machine. GitHub also offers larger runners, which are available in larger configurations.
 
  If you need a different operating system or require a specific hardware configuration, you can host your own runners.
+ 
+ # Part 9- Android Test In GitHub Runner
+ 
+ we can run the andriod tests in the Github Runner itself and it can save lot of money
+    1. Setup project
+    2. Setup java
+    3. Setup Node
+    4. Download appium
+    5. Run appium
+    6. Start emulator
+    7. Run the test
