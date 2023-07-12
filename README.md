@@ -44,13 +44,25 @@ A runner is a server that runs your workflows when they're triggered. Each runne
 
  If you need a different operating system or require a specific hardware configuration, you can host your own runners.
  
- # Part 9- Android Test In GitHub Runner
+# Part 9-1 Android Test In GitHub Runner
  
- we can run the andriod tests in the Github Runner itself and it can save lot of money
-    1. Setup project
-    2. Setup java
-    3. Setup Node
-    4. Download appium
-    5. Run appium
-    6. Start emulator
-    7. Run the test
+we can run the andriod tests in the Github Runner itself and it can save lot of money
+
+  1. Setup project
+  2. Setup java
+  3. Setup Node
+  4. Download appium
+  5. Run appium
+  6. Start emulator
+  7. Run the test
+
+# Part 9-2 IOS Test In GitHub Runner
+we can run the ios tests in the Github Runner itself and it can save lot of money
+
+   1. Setup project
+   2. Setup java
+   3. Setup Node
+   4. Download appium
+   5. Run appium
+   6. Start emulator
+   7. Run the test

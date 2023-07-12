@@ -23,6 +23,7 @@ public final class WebTest {
 		
 		DesiredCapabilities capabilities= new DesiredCapabilities();
 		capabilities.setCapability("browserName", "chrome");
+		capabilities.setCapability("browserVersion", "83.0");
 		capabilities.setCapability("enableVNC", true);
 		capabilities.setCapability("enableVideo", false);
 		
@@ -32,6 +33,11 @@ public final class WebTest {
 		Thread.sleep(10000);
 		driver.quit();
 	}
+	
+	/**
+	 * This dataProvider is for selenium-hub with different nodes browsers 
+	 * @return
+	 */
 	
 	@DataProvider(parallel = true)
 	public Object [][] getData(){
