@@ -15,6 +15,7 @@ pipeline {
                 steps {
                     echo 'Unit Tests the application..'
                     sh 'java -version'
+                }
             }
             stage("Functional Tests"){
                 agent { docker 'openjdk:8-jdk-alpine' }
@@ -29,7 +30,9 @@ pipeline {
                     sh 'java -version'
                 }
             }
+          }
         }
+
         stage('Deploy') {
             steps {
                 echo 'Deploying the application....'
@@ -37,3 +40,4 @@ pipeline {
         }
     }
 }
+
