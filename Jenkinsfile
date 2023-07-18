@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building the application..'
-                sh 'mvn -v'                 
+                echo 'Building the application..'              
             }
         }
         stage('Testing') {
@@ -13,19 +12,16 @@ pipeline {
             stage("Unit Tests"){                
                 steps {
                     echo 'Unit Tests the application..'
-                    sh 'java -version'
                 }
             }
             stage("Functional Tests"){
                 steps{
                     echo 'Functional Tests the application..'
-                    sh 'java -version'
                 }
             }
             stage("Integration Tests"){
                 steps{
                     echo 'Integration Tests the application..'
-                    sh 'java -version'
                 }
             }
           }
