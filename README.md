@@ -67,6 +67,9 @@ we can run the ios tests in the Github Runner itself and it can save lot of mone
    6. Start emulator
    7. Run the test
    
-## Part 12 Manage Dependencies using DepndaBot
+## Part 12 Manage Dependencies using DependaBot
  Automatically create PR to update the dependencies from lower versions to newer version
+ 
+## Part 13 Automatically Merge dependaBot Pull Request
+ Automatically merge PR when the unit test/smoke test passed
  
