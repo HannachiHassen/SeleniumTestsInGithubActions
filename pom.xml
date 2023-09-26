@@ -15,7 +15,7 @@
   <properties>
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
-    <webdrivermanager.version>5.3.3</webdrivermanager.version>
+    <webdrivermanager.version>5.5.3</webdrivermanager.version>
     <appium.java.version>8.5.1</appium.java.version> 
     <testng.version>7.8.0</testng.version>
     <lombok.version>1.18.30</lombok.version>
