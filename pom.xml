@@ -19,7 +19,7 @@
     <appium.java.version>8.5.1</appium.java.version> 
     <testng.version>7.8.0</testng.version>
     <lombok.version>1.18.30</lombok.version>
-    <selenium.version>3.141.59</selenium.version>
+    <selenium.version>4.15.0</selenium.version>
   </properties>
 
    <build>
