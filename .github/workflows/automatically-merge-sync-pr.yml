@@ -11,7 +11,7 @@ jobs:
       pull-requests: write
     steps:
       - name: auto-approve-pull-request
-        uses: hmarr/auto-approve-action@v3
+        uses: hmarr/auto-approve-action@v4.0.0
     
   auto-merge-sync-prs:
     runs-on: ubuntu-latest
