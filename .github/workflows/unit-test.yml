@@ -33,7 +33,7 @@ jobs:
         timeout-minutes: 10
         with:
           distribution: 'temurin' # See 'Supported distributions' for available options
-          java-version: 11
+          java-version: 25
 
       - name: Run unit test
         timeout-minutes: 10
